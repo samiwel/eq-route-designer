@@ -1,0 +1,11 @@
+.sidebar {
+    padding: 0.5em 1em;
+    font-family: 'Lato', sans-serif;
+    width: calc((100% / 12) * 3);
+    background: #fafafa;
+    border-left: 2px solid #dadada;
+}
+
+label:after {
+    content: ':';
+}
