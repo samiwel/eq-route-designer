@@ -6,12 +6,18 @@ import './App.css';
 class App extends Component {
 
     componentDidMount() {
+
+        let nodeStyle = {
+            font: '16px Lato black',
+            shape: 'box'
+        }
+
         const nodes = new vis.DataSet([
-            {id: 1, label: 'Node 1'},
-            {id: 2, label: 'Node 2'},
-            {id: 3, label: 'Node 3'},
-            {id: 4, label: 'Node 4'},
-            {id: 5, label: 'Node 5'}
+            {id: 1, label: 'Node 1', ...nodeStyle},
+            {id: 2, label: 'Node 2', ...nodeStyle},
+            {id: 3, label: 'Node 3', ...nodeStyle},
+            {id: 4, label: 'Node 4', ...nodeStyle},
+            {id: 5, label: 'Node 5', ...nodeStyle}
         ]);
 
         const edges = new vis.DataSet([
