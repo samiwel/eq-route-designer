@@ -6,6 +6,3 @@
     border-left: 2px solid #dadada;
 }
 
-label:after {
-    content: ':';
-}
