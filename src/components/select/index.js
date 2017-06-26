@@ -11,7 +11,7 @@ class Select extends React.Component {
                 <Label>{this.props.label}</Label>
                 <select className="form-control" value={this.props.value}>
                     {this.props.options.map(option => (
-                        <option value={option}>{capitalize(option)}</option>
+                        <option key={option} value={option}>{capitalize(option)}</option>
                     ))}
                 </select>
             </div>
