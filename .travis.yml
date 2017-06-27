@@ -8,5 +8,14 @@ script:
   - yarn test
   - yarn build
 
-after_success:
-  - yarn deploy
+env:
+  - secure: "JXpgJgTFeM4asRLr3UwuhOqyUThBc1jGxWndxyBufxVgB0+q3v8aBQpr0TV4mIx9qQkcZxThAIcO+l3k4nYrJ3LqKwACJwt7YiS+dj4oobPc+EDl+tqbdvI4ooXWAQAcJsqmLjZNON7XdtAW0dSK5EMOh1IfaFLCCV/s0g6WjQUmLiP5ItLTZV4wsaWm9Kf2nJrEbZjY5D1ss3a+kBLMzGBsh9/lJfUTfDANjGoRZoSzTQwa34ulsgPHg1nTrHQMy5FneZICn9TssotLOPTZNXN9mefFbY6/UsOF9OMq6eIKKaRhTqUS7lsrdBg3a5sDZWpTA8wIqn7XrmAmWs2c2XNKRTzlFcrfcfIibzfEi0E4Gi4JM/qk6IrhQaCZJu6xFZhtFnm3DuhTTpU/VXTzMXKQgchOZjEWWbcsOIdF5b+BlRpACRxtTYVietAKaMA2x5reQiZfgHMWc6u6Y2qScEbSKey/jB/U8ipu7MFpQM3e6FsViHldibT4NQAQM9I1u6CnnQR899iQ82CbxlGcoNaMDnr5k3FZ8Qi7urnlP2688dPKC86kipiwgPPWprpNnH10XCZNZNKZf5n5vVo3VhHHVNjYl2U4FXCGOnfKHX4jhKOAQLT40EVdj1JPmeBwKNKUQv3ygS2M0sfVCUsZESTbsqLWkoaSOt6yDSKybAk="
+
+deploy:
+  local_dir: build
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch:
+      - master
