@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Button from '../components/button';
-import { NODE_CREATE } from '../actions/nodeActions';
+import { createNode } from '../actions/actionCreators';
 
 const AddNodeButton = (props) => (
     <Button onClick={props.onClick}>Add Node</Button>
@@ -10,7 +10,7 @@ const AddNodeButton = (props) => (
 
 const mapDispatchToProps = function(dispatch){
     return {
-        onClick: () => dispatch({type: NODE_CREATE}) // TODO swap for action creator
+        onClick: () => dispatch(createNode('New node'))
     }
 };
 

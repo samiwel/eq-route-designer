@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Sidebar from './components/sidebar';
-import Network from "./components/network";
+import ConnectedNetwork from "./connected/connectedNetwork";
 import './App.css';
 
 
@@ -10,7 +10,7 @@ class App extends Component {
     return (
         <div className="page">
         <div className="wrapper">
-            <Network />
+            <ConnectedNetwork />
             <Sidebar />
         </div>
         </div>

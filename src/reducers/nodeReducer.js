@@ -8,9 +8,7 @@ export default (state, action) => {
 
     switch(action.type){
         case NODE_CREATE:
-            newState.push({
-                node: 1
-            });
+            newState.push(action.data);
             return newState;
 
         default: return state || initialState().nodes;
