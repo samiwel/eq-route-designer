@@ -4,5 +4,9 @@ node_js:
 
 cache: yarn
 
+script:
+  - yarn test
+  - yarn build
+
 after_success:
   - yarn deploy
