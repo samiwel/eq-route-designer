@@ -1,0 +1,7 @@
+module.exports = {
+
+    NODE_CREATE: "NODE_CREATE",
+    NODE_UPDATE: "NODE_UPDATE",
+    NODE_DELETE: "NODE_DELETE"
+
+};
