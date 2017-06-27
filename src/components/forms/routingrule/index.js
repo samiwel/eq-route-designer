@@ -1,6 +1,8 @@
 import React from 'react';
 import Select from '../../select';
 
+import AddNodeButton from '../../../connected/addnodebutton';
+
 class RoutingRuleForm extends React.Component {
 
     render() {
@@ -37,6 +39,7 @@ class RoutingRuleForm extends React.Component {
                         </div>
 
                         <button className="btn btn-primary">Done</button>
+                        <AddNodeButton />
                     </div>
                 </div>
             </div>

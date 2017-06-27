@@ -1,5 +1,6 @@
 export default () => {
     return {
-        nodes: []
+        nodes: [],
+        edges: []
     }
 }
