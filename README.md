@@ -4,6 +4,8 @@
 
 A proof of concept for designing routes through EQ surveys.
 
+[Demo](https://samiwel.github.io/eq-route-designer)
+
 ## How to run
 
 ```
